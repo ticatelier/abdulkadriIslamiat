@@ -1,6 +1,7 @@
 // ------Active Tab-------
 var tablinks = document.getElementsByClassName('tablinks');
 var tabcontents = document.getElementsByClassName('tabcontents');
+var sidemeu = document.getElementById("sidemenu");
 
 function opentab(id){
     for(tablink of tablinks){
@@ -13,3 +14,11 @@ function opentab(id){
     document.getElementById(id).classList.add("activetab");
 }
 
+function openmenu(){
+    // console.log(sidemeu);
+    sidemeu.style.right = "0";
+}
+
+function closemenu(){
+    sidemeu.style.right = "-200px";
+}
